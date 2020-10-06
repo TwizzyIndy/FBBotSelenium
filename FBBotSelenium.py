@@ -86,8 +86,10 @@ def get_credentials():
 
 def main():
 
+    # get credentials from json
     user_infos = get_credentials()
 
+    # initialize login process with given infos
     bot = FBBot(user_infos['email'], user_infos['password'])
     bot.login()
     
